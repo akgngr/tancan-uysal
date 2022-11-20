@@ -1,5 +1,7 @@
 <template>
-  <div>Blogs</div>
+  <div class="flex h-60 items-center justify-center">
+    <h1 class="text-3xl font-bold">Blog Yazılarım</h1>
+  </div>
   <div class="grid grid-cols-3 gap-4">
     <client-only placeholder="Yükleniyor...">
       <BlogCard

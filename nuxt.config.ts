@@ -20,5 +20,12 @@ export default defineNuxtConfig({
   },
   image: {
     domains: ["https://media.graphassets.com"]
+  },
+  app: {
+    head: {
+      link: [
+        { rel:"stylesheet", href: "https://fonts.googleapis.com/css2?family=Sacramento&display=swap"},
+      ],
+    }
   }
 })

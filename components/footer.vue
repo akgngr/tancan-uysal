@@ -1,5 +1,7 @@
 <template>
-  <div class="mx-auto grid w-11/12 grid-cols-1 pt-20 pb-8 md:grid-cols-3">
+  <div
+    class="grid grid-cols-1 border-t border-gray-50 bg-gray-100 px-8 pt-10 pb-8 md:grid-cols-3"
+  >
     <div class="relative col-span-2 space-y-2">
       <h2 class="font-semibold">{{ data.sETTINGS.data.isim }}</h2>
       <p>{{ data.sETTINGS.data.mail }}</p>
@@ -15,8 +17,8 @@
         >
       </p>
     </div>
-    <div>
-      <p>
+    <div class="mt-20 flex flex-col pb-4 md:mt-0 md:pb-2">
+      <p class="flex justify-center md:justify-start">
         <a
           class="text-2xl font-semibold text-blue-800"
           target="_blank"
@@ -27,21 +29,42 @@
           >{{ "#" + data.sETTINGS.data.hashtag }}</a
         >
       </p>
-      <div class="flex gap-4 pt-4">
+      <div class="flex justify-center gap-4 pt-4 md:justify-start">
         <span class="block h-12 w-12">
-          <svg-linkedin />
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/tancan-uysal-29023046/"
+          >
+            <svg-linkedin
+          /></a>
         </span>
         <span class="block h-12 w-12">
-          <svg-facebook />
+          <a target="_blank" href="https://www.facebook.com/tancan.uysal">
+            <svg-facebook
+          /></a>
         </span>
         <span class="block h-12 w-12">
-          <svg-instagram />
+          <a
+            target="_blank"
+            href="https://www.instagram.com/profdrtancanuysal/"
+          >
+            <svg-instagram
+          /></a>
         </span>
         <span class="block h-12 w-12">
-          <svg-twitter />
+          <a target="_blank" href="https://twitter.com/tancanuysal">
+            <svg-twitter
+          /></a>
         </span>
         <span class="block h-12 w-12">
-          <svg-youtube />
+          <a target="_blank" href="https://www.youtube.com/c/TancanUysal">
+            <svg-youtube
+          /></a>
+        </span>
+        <span class="block h-12 w-12">
+          <a target="_blank" href="https://www.tiktok.com/@tancanuysal">
+            <svg-tiktok
+          /></a>
         </span>
       </div>
     </div>

@@ -1,5 +1,5 @@
 <template>
-  <div class="rounded-md shadow-xl">
+  <div class="rounded-md shadow-md">
     <nuxt-img
       class="rounded-tl-lg rounded-tr-lg"
       :src="img.url"

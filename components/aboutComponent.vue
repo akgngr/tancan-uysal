@@ -3,6 +3,7 @@
     <article class="prose lg:prose-lg">
       <h1>Prof. Dr. Tancan UYSAL, kimdir?</h1>
       <span v-html="data.page.description"></span>
+      <ui-link-btn link="/hakkimda" text="Devamını Oku" />
     </article>
 
     <nuxt-picture

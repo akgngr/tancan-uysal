@@ -1,6 +1,7 @@
 <template>
   <AboutComponent />
   <blog-component />
+  <iletisim-component />
   <Harita />
 </template>
 <script setup>

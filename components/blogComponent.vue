@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gray-100 px-16 py-16">
+  <div class="bg-gray-100 px-8 py-16 md:px-16">
     <client-only placeholder="Yükleniyor...">
       <NuxtLink href="/blogs"
         ><h2 class="pb-6 text-3xl font-semibold">Blog Yazılarım</h2></NuxtLink

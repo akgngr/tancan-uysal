@@ -1,6 +1,6 @@
 <template>
   <NuxtLink
-    class="bg-yellow-800 py-2 px-2 rounded-md text-white hover:bg-yellow-700"
+    class="rounded-sm bg-yellow-800 py-3 px-6 text-sm text-white hover:bg-yellow-700"
     :href="link"
     >{{ text }}</NuxtLink
   >

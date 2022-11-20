@@ -1,13 +1,16 @@
 <template>
-  <article class="prose lg:prose-xl mx-auto">
+  <article class="prose mx-auto">
     <nuxt-img :src="data.blog.image.url" :alt="data.blog.image.title" />
     <h1>{{ data.blog.title }}</h1>
-    <time>{{ data.blog.publishedAt }}</time>
+    <span> {{ moment(data.blog.publishedAt).format("L") }}</span>
     <span v-html="data.blog.body.html"></span>
   </article>
 </template>
 
 <script lang="ts" setup>
+import moment from "moment";
+import "moment/locale/tr";
+moment.locale("tr");
 const route = useRoute();
 
 const query = gql`
