@@ -4,9 +4,10 @@
   <lazy-blog-component />
   <lazy-iletisim-component />
   <lazy-img-comparison />
+  <youtube-component />
   <LazyHarita />
 </template>
-<script setup>
+<script setup lang="ts">
 definePageMeta({
   layout: "homelayout",
 });

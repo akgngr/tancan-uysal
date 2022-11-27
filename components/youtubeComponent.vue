@@ -1,12 +1,5 @@
 <template>
-  <seo
-    title="youtube videlolarım"
-    description="Prof. Dr. Tancan Uysal, videolarım"
-  />
-  <div class="flex h-60 items-center justify-center">
-    <h1 class="text-xl font-semibold">Videolarım</h1>
-  </div>
-  <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+  <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3" v-if="data">
     <div v-for="item in data.items" :key="item.id.videoId">
       <iframe
         width="100%"
@@ -19,9 +12,10 @@
       ></iframe>
     </div>
   </div>
-  {{ data }}
 </template>
 
 <script setup>
-const { data } = await useAsyncData("youtube", () => $fetch("/api/youtube"));
+const { data } = await useAsyncData("youtube", () =>
+  $fetch("/api/youtubethre")
+);
 </script>
