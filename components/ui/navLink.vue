@@ -1,7 +1,8 @@
 <template>
   <NuxtLink
-    class="rounded-sm bg-yellow-800 py-3 px-6 text-sm text-white hover:bg-yellow-700"
     :to="link"
+    class="block rounded py-2 pl-3 pr-4 text-base text-gray-700 md:p-0"
+    aria-current="page"
     >{{ text }}</NuxtLink
   >
 </template>

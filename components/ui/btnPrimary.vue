@@ -1,9 +1,14 @@
 <template>
   <NuxtLink
-    class="rounded-sm bg-yellow-800 py-3 px-6 text-white hover:bg-yellow-700"
     :href="link"
-    >{{ text }}</NuxtLink
+    class="group relative mb-2 mr-2 inline-flex items-center justify-center overflow-hidden rounded-lg bg-gradient-to-br from-green-400 to-blue-600 p-0.5 text-sm font-medium text-gray-900 hover:text-white focus:outline-none focus:ring-4 focus:ring-green-200 group-hover:from-green-400 group-hover:to-blue-600 dark:text-white dark:focus:ring-green-800"
   >
+    <span
+      class="relative rounded-md bg-white px-5 py-2.5 transition-all duration-75 ease-in group-hover:bg-opacity-0 dark:bg-gray-900"
+    >
+      {{ text }}
+    </span>
+  </NuxtLink>
 </template>
 
 <script lang="ts" setup>

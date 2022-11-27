@@ -1,5 +1,7 @@
 <template>
-  <div class="mx-auto flex w-11/12 flex-wrap gap-8 py-44">
+  <div
+    class="mx-auto grid w-11/12 grid-cols-1 gap-8 py-24 md:grid-cols-2 md:py-44"
+  >
     <article class="prose lg:prose-lg">
       <h1>Prof. Dr. Tancan UYSAL, kimdir?</h1>
       <span v-html="data.page.description"></span>

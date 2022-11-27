@@ -2,9 +2,9 @@
   <div class="flex h-60 items-center justify-center">
     <h1 class="text-xl font-semibold">İletişim ve Randevu</h1>
   </div>
-  <div class="mb-36 grid grid-cols-2 gap-4">
-    <div><harita /></div>
-    <div>
+  <div class="mb-36 flex flex-col-reverse gap-4 md:grid md:grid-cols-2">
+    <div class="mt-12 md:mt-0"><harita /></div>
+    <div class="order-last">
       <div class="form-group">
         <label for="isim">İsim Soyisim</label>
         <input type="text" name="isim" id="isim" required />

@@ -20,7 +20,7 @@
     <div class="mt-20 flex flex-col pb-4 md:mt-0 md:pb-2">
       <p class="flex justify-center md:justify-start">
         <a
-          class="text-2xl font-semibold text-blue-800"
+          class="text-base font-semibold text-blue-800 md:text-lg lg:text-xl xl:text-2xl"
           target="_blank"
           :href="
             'https://www.instagram.com/explore/tags/' +

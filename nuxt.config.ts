@@ -26,6 +26,6 @@ export default defineNuxtConfig({
       link: [
         { rel:"stylesheet", href: "https://fonts.googleapis.com/css2?family=Sacramento&display=swap"},
       ],
-    }
+    },
   }
 })
