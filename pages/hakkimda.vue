@@ -1,4 +1,8 @@
 <template>
+  <seo
+    title="Prof. Dr. Tancan UYSAL Kimdir?"
+    description="1976 yılında Bursa Karacabey’de doğdu. İlkokulu Bilecik Edebali İlköğretim Okulunda, Ortaokulu Bilecik Anadolu Lisesi’nde bitirdi. Lise öğrenimini Bursa Karacabey Lisesinde birincilikle tamamladı. 1994 yılında girdiği Gazi Üniversitesi Diş Hekimliği Fakültesinden 1999 yılında dönem birincisi olarak mezun oldu."
+  />
   <div>
     <div class="flex h-60 items-center justify-center">
       <h1 class="text-3xl font-semibold">Prof. Dr. Tancan UYSAL Kimdir?</h1>

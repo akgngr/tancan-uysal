@@ -1,4 +1,8 @@
 <template>
+  <seo
+    title="Blog yazılarım"
+    description="Ortondik tedaviler hakkında kaleme aldığım blog yazılarım."
+  />
   <div class="flex h-60 items-center justify-center">
     <h1 class="text-3xl font-bold">Blog Yazılarım</h1>
   </div>

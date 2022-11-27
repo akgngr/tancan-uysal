@@ -1,4 +1,5 @@
 <template>
+  <seo />
   <LazyAboutComponent />
   <lazy-blog-component />
   <lazy-iletisim-component />

@@ -1,4 +1,8 @@
 <template>
+  <seo
+    title="Şeffaf plaklarla yapılan ortodontik tedavilerin sonuçları"
+    description="Şeffaf plaklarla yapılan ortodontik tedavilerin sonuçları, hastalarımın tedaviye başlamadan ki ilk halleri ve tedaviden sonraki son halleri."
+  />
   <client-only>
     <div class="flex h-60 items-center justify-center">
       <h1 class="text-3xl font-bold">After Before</h1>

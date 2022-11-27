@@ -1,4 +1,9 @@
 <template>
+  <seo
+    :title="data.blog.title"
+    :description="data.blog.description"
+    :img="data.blog.image.url"
+  />
   <article class="prose mx-auto">
     <nuxt-img :src="data.blog.image.url" :alt="data.blog.image.title" />
     <h1>{{ data.blog.title }}</h1>

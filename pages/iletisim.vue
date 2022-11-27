@@ -1,4 +1,8 @@
 <template>
+  <seo
+    title="İletişim"
+    description="Prof. Dr. Tancan Uysal, iletişim ve randevu"
+  />
   <div class="flex h-60 items-center justify-center">
     <h1 class="text-xl font-semibold">İletişim ve Randevu</h1>
   </div>
