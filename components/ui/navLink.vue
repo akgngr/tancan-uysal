@@ -1,6 +1,6 @@
 <template>
   <NuxtLink
-    :href="link"
+    :to="link"
     class="block rounded py-2 pl-3 pr-4 text-base text-gray-700 md:p-0"
     aria-current="page"
     >{{ text }}</NuxtLink

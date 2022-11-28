@@ -1,11 +1,11 @@
 <template>
   <seo />
-  <LazyAboutComponent />
-  <lazy-blog-component />
-  <lazy-iletisim-component />
-  <lazy-img-comparison />
+  <AboutComponent />
+  <blog-component />
+  <iletisim-component />
+  <img-comparison />
   <youtube-component />
-  <LazyHarita />
+  <Harita />
 </template>
 <script setup lang="ts">
 definePageMeta({
