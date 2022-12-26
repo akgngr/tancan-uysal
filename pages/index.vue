@@ -1,10 +1,12 @@
 <template>
   <seo />
   <AboutComponent />
-  <blog-component />
+  <invisalign />
+  <youtube-component />
   <iletisim-component />
   <img-comparison />
-  <youtube-component />
+  <reviews />
+  <blog-component />
   <Harita />
 </template>
 <script setup lang="ts">

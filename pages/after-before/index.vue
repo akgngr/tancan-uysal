@@ -38,7 +38,7 @@
 <script setup lang="ts">
 const query = gql`
   query getAfterBoferes {
-    afterBoferes(orderBy: publishedAt_ASC) {
+    afterBoferes(orderBy: publishedAt_DESC) {
       id
       title
       description

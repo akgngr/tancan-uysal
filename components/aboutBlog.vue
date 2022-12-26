@@ -1,13 +1,11 @@
 <template>
-  <div class="px-8 py-16 md:px-16">
+  <div class="my-8 px-8 py-8 md:px-16">
     <client-only placeholder="Yükleniyor...">
       <NuxtLink href="/blogs"
-        ><h2 class="pb-6 text-3xl font-semibold">Blog Yazılarım</h2></NuxtLink
+        ><h2 class="pb-6 text-3xl font-semibold">
+          Şeffaf plaklarla ortodontik tedavi ile ilgili yazılarım.
+        </h2></NuxtLink
       >
-      <p>
-        Bu bölümde beyaz estetik, pembe estetik, yüz estetiği, gülümseme
-        estetiği ve ortodonti tedavisi hakkında bilgi edinebilirsiniz.
-      </p>
       <div class="grid grid-cols-1 gap-4 pt-8 md:grid-cols-2 lg:grid-cols-3">
         <BlogCard
           v-for="blog in data.blogs"

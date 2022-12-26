@@ -1,32 +1,39 @@
 <template>
   <client-only>
-    <div class="mx-auto px-4 py-2">
-      <h2 class="text-2xl font-semibold">After Before</h2>
-    </div>
+    <div class="mx-auto my-32 w-11/12">
+      <div class="mx-auto py-2">
+        <NuxtLink to="/after-before">
+          <h2 class="text-2xl font-semibold">After Before</h2>
+        </NuxtLink>
+      </div>
 
-    <div class="my-8 mx-auto grid grid-cols-1 gap-4 px-4 lg:grid-cols-3">
-      <img-comparison-slider
-        v-for="afterBofer in data.afterBoferes"
-        :key="afterBofer.id"
-        class="rendered"
-      >
-        <figure slot="first" class="before">
-          <img
-            :width="afterBofer.afterImage.width"
-            :height="afterBofer.afterImage.height"
-            :src="afterBofer.afterImage.url"
-          />
-          <figcaption>Before</figcaption>
-        </figure>
-        <figure slot="second" class="after">
-          <img
-            :width="afterBofer.beforeImage.width"
-            :height="afterBofer.beforeImage.height"
-            :src="afterBofer.beforeImage.url"
-          />
-          <figcaption>After</figcaption>
-        </figure>
-      </img-comparison-slider>
+      <div class="my-8 mx-auto grid grid-cols-1 gap-4 lg:grid-cols-3">
+        <img-comparison-slider
+          v-for="afterBofer in data.afterBoferes"
+          :key="afterBofer.id"
+          class="rendered"
+        >
+          <figure slot="first" class="before">
+            <img
+              :width="afterBofer.afterImage.width"
+              :height="afterBofer.afterImage.height"
+              :src="afterBofer.afterImage.url"
+            />
+            <figcaption>Before</figcaption>
+          </figure>
+          <figure slot="second" class="after">
+            <img
+              :width="afterBofer.beforeImage.width"
+              :height="afterBofer.beforeImage.height"
+              :src="afterBofer.beforeImage.url"
+            />
+            <figcaption>After</figcaption>
+          </figure>
+        </img-comparison-slider>
+      </div>
+      <div class="my-8 text-center">
+        <ui-btn-primary link="/after-before" text="Diğer Resimler" />
+      </div>
     </div>
   </client-only>
 </template>
@@ -34,7 +41,7 @@
 <script setup lang="ts">
 const query = gql`
   query getAfterBoferes {
-    afterBoferes(first: 3, orderBy: publishedAt_ASC) {
+    afterBoferes(first: 3, orderBy: publishedAt_DESC) {
       id
       afterImage {
         url
