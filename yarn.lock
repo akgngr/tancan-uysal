@@ -576,7 +576,7 @@
 
 "@popperjs/core@^2.9.3":
   version "2.11.6"
-  resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.11.6.tgz#cee20bd55e68a1720bdab363ecf0c821ded4cd45"
+  resolved "https://registry.npmjs.org/@popperjs/core/-/core-2.11.6.tgz"
   integrity sha512-50/17A98tWUfQ176raKiOGXuYpLyyVMkxxG6oylzL3BPOlA6ADGdK7EYunSa4I064xerltq9TGXs8HmOk5E+vw==
 
 "@rollup/plugin-alias@^4.0.2":
@@ -704,7 +704,7 @@
 
 "@types/web-bluetooth@^0.0.15":
   version "0.0.15"
-  resolved "https://registry.yarnpkg.com/@types/web-bluetooth/-/web-bluetooth-0.0.15.tgz#d60330046a6ed8a13b4a53df3813c44942ebdf72"
+  resolved "https://registry.npmjs.org/@types/web-bluetooth/-/web-bluetooth-0.0.15.tgz"
   integrity sha512-w7hEHXnPMEZ+4nGKl/KDRVpxkwYxYExuHOYXyzIzCDzEZ9ZCGMAewulr9IqJu2LR4N37fcnb1XVeuZ09qgOxhA==
 
 "@unhead/dom@1.0.2", "@unhead/dom@^1.0.1":
@@ -903,7 +903,7 @@
 
 "@vueuse/core@9.3.0":
   version "9.3.0"
-  resolved "https://registry.yarnpkg.com/@vueuse/core/-/core-9.3.0.tgz#74d855bd19cb5eadd2edb30c871918fac881e8b8"
+  resolved "https://registry.npmjs.org/@vueuse/core/-/core-9.3.0.tgz"
   integrity sha512-64Rna8IQDWpdrJxgitDg7yv1yTp41ZmvV8zlLEylK4QQLWAhz1OFGZDPZ8bU4lwcGgbEJ2sGi2jrdNh4LttUSQ==
   dependencies:
     "@types/web-bluetooth" "^0.0.15"
@@ -923,12 +923,12 @@
 
 "@vueuse/metadata@9.3.0":
   version "9.3.0"
-  resolved "https://registry.yarnpkg.com/@vueuse/metadata/-/metadata-9.3.0.tgz#c107fe77a577e1f221536cd1b291039c0c7c4bce"
+  resolved "https://registry.npmjs.org/@vueuse/metadata/-/metadata-9.3.0.tgz"
   integrity sha512-GnnfjbzIPJIh9ngL9s9oGU1+Hx/h5/KFqTfJykzh/1xjaHkedV9g0MASpdmPZIP+ynNhKAcEfA6g5i8KXwtoMA==
 
 "@vueuse/shared@9.3.0":
   version "9.3.0"
-  resolved "https://registry.yarnpkg.com/@vueuse/shared/-/shared-9.3.0.tgz#40fc138ba4e379c894075830aa2e15404aaa8a5b"
+  resolved "https://registry.npmjs.org/@vueuse/shared/-/shared-9.3.0.tgz"
   integrity sha512-caGUWLY0DpPC6l31KxeUy6vPVNA0yKxx81jFYLoMpyP6cF84FG5Dkf69DfSUqL57wX8JcUkJDMnQaQIZPWFEQQ==
   dependencies:
     vue-demi "*"
@@ -1333,7 +1333,7 @@ ci-info@^3.6.1:
 
 classnames@2.3.2:
   version "2.3.2"
-  resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.3.2.tgz#351d813bf0137fcc6a76a16b88208d2560a0d924"
+  resolved "https://registry.npmjs.org/classnames/-/classnames-2.3.2.tgz"
   integrity sha512-CSbhY4cFEJRe6/GQzIk5qXZ4Jeg5pcsP7b5peFSDpffpe1cqjASH/n9UTjBwOp6XpMSTwQ8Za2K5V02ueA7Tmw==
 
 cli-cursor@^4.0.0:
@@ -1706,10 +1706,10 @@ depd@2.0.0:
   resolved "https://registry.npmjs.org/depd/-/depd-2.0.0.tgz"
   integrity sha512-g7nH6P6dyDioJogAAGprGpCtVImJhpPk/roCzdb3fIh61/s/nPsfR6onyMwkCAR/OlC3yBC0lESvUoQEAssIrw==
 
-destr@^1.1.1, destr@^1.2.0, destr@^1.2.1:
-  version "1.2.1"
-  resolved "https://registry.npmjs.org/destr/-/destr-1.2.1.tgz"
-  integrity sha512-ud8w0qMLlci6iFG7CNgeRr8OcbUWMsbfjtWft1eJ5Luqrz/M8Ebqk/KCzne8rKUlIQWWfLv0wD6QHrqOf4GshA==
+destr@^1.1.1, destr@^1.2.0, destr@^1.2.1, destr@^1.2.2:
+  version "1.2.2"
+  resolved "https://registry.npmjs.org/destr/-/destr-1.2.2.tgz"
+  integrity sha512-lrbCJwD9saUQrqUfXvl6qoM+QN3W7tLV5pAOs+OqOmopCCz/JkE05MHedJR1xfk4IAnZuJXPVuN5+7jNA2ZCiA==
 
 destroy@1.2.0:
   version "1.2.0"
@@ -1786,7 +1786,7 @@ dot-prop@^7.2.0:
 
 dotenv@^16.0.3:
   version "16.0.3"
-  resolved "https://registry.npmjs.org/dotenv/-/dotenv-16.0.3.tgz"
+  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-16.0.3.tgz#115aec42bac5053db3c456db30cc243a5a836a07"
   integrity sha512-7GO6HghkA5fYG9TYnNxi14/7K9f5occMlp3zXAuSxn7CKCxt9xbNWG7yF8hTCSUchlfWSe3uLmlPfigevRItzQ==
 
 duplexer@^0.1.2:
@@ -1808,6 +1808,11 @@ electron-to-chromium@^1.4.251:
   version "1.4.284"
   resolved "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.4.284.tgz"
   integrity sha512-M8WEXFuKXMYMVr45fo8mq0wUrrJHheiKZf6BArTKk9ZBYCKJEOU5H8cdWgDT+qCVZf7Na4lVUaZsA+h6uA9+PA==
+
+emailjs@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/emailjs/-/emailjs-4.0.1.tgz#963533d07bf41b90bc5e7651b99464bd01129dfd"
+  integrity sha512-rTN/LDvlqwU79E367ovB7FIziImzimhQcZiGmC20VcDPbf0mv3l9c3aavtMcEFaFBsycjGB5aMIhz4ZbKNeLWw==
 
 emoji-regex@^8.0.0:
   version "8.0.0"
@@ -2125,7 +2130,7 @@ flat@^5.0.2:
 
 flowbite-vue@^0.0.7:
   version "0.0.7"
-  resolved "https://registry.yarnpkg.com/flowbite-vue/-/flowbite-vue-0.0.7.tgz#10395354a11cb73fc0ab6e328b7ee1719b5af707"
+  resolved "https://registry.npmjs.org/flowbite-vue/-/flowbite-vue-0.0.7.tgz"
   integrity sha512-Vg/D/z9pXcetbtRXIszV0AzaujCD+/VmKUxR7T9p18GhnnQDvQk9ppNWufy8dXAf98PDuKR+kFqG7v8HBYl0uQ==
   dependencies:
     "@vueuse/core" "9.3.0"
@@ -2134,10 +2139,18 @@ flowbite-vue@^0.0.7:
     lodash-es "4.17.21"
     tailwindcss "3.2.4"
 
-flowbite@1.5.4, flowbite@^1.5.4:
+flowbite@1.5.4:
   version "1.5.4"
-  resolved "https://registry.yarnpkg.com/flowbite/-/flowbite-1.5.4.tgz#fafea28f7722cecc9aae2ca81b81cb51b3bc123b"
+  resolved "https://registry.npmjs.org/flowbite/-/flowbite-1.5.4.tgz"
   integrity sha512-A4VTeJE+aHSbwrMzWvpTADhNgX8Njpb3DqRL26pFkOupklPg8cmNstZK8cXrFnBPxomOiX/OazZnhQM1BIZADQ==
+  dependencies:
+    "@popperjs/core" "^2.9.3"
+    mini-svg-data-uri "^1.4.3"
+
+flowbite@^1.5.4:
+  version "1.6.0"
+  resolved "https://registry.npmjs.org/flowbite/-/flowbite-1.6.0.tgz"
+  integrity sha512-3+kd/Y5D55q+9M82VFb89SQcy7tkCD+vKtw97s49MLvELr5tTCqt+Qf3GWFvVEpHR9xPiI0xPXiCTQfYSEB1WA==
   dependencies:
     "@popperjs/core" "^2.9.3"
     mini-svg-data-uri "^1.4.3"
@@ -2375,14 +2388,14 @@ h3@^0.8.2:
     ufo "^0.8.6"
 
 h3@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.npmjs.org/h3/-/h3-1.0.1.tgz"
-  integrity sha512-gDCGpRvjchZW2JBlTqbJ9IOs+mdkXXuwSQkSye+jubHAv/UhdamKqoQvd4RFgyBNjHSId8Y+b10UdTcPlP/V+w==
+  version "1.0.2"
+  resolved "https://registry.npmjs.org/h3/-/h3-1.0.2.tgz"
+  integrity sha512-25QqjQMz8pX1NI2rZ/ziNT9B8Aog7jmu2a0o8Qm9kKoH3zOhE+2icVs069h6DEp0g1Dst1+zKfRdRYcK0MogJA==
   dependencies:
     cookie-es "^0.5.0"
-    destr "^1.2.1"
+    destr "^1.2.2"
     radix3 "^1.0.0"
-    ufo "^1.0.0"
+    ufo "^1.0.1"
 
 has-flag@^3.0.0:
   version "3.0.0"
@@ -2787,7 +2800,7 @@ local-pkg@^0.4.2:
 
 lodash-es@4.17.21:
   version "4.17.21"
-  resolved "https://registry.yarnpkg.com/lodash-es/-/lodash-es-4.17.21.tgz#43e626c46e6591b7750beb2b50117390c609e3ee"
+  resolved "https://registry.npmjs.org/lodash-es/-/lodash-es-4.17.21.tgz"
   integrity sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==
 
 lodash._reinterpolate@^3.0.0:
@@ -2976,7 +2989,7 @@ mimic-response@^3.1.0:
 
 mini-svg-data-uri@^1.4.3:
   version "1.4.4"
-  resolved "https://registry.yarnpkg.com/mini-svg-data-uri/-/mini-svg-data-uri-1.4.4.tgz#8ab0aabcdf8c29ad5693ca595af19dd2ead09939"
+  resolved "https://registry.npmjs.org/mini-svg-data-uri/-/mini-svg-data-uri-1.4.4.tgz"
   integrity sha512-r9deDe9p5FJUPZAk3A59wGH7Ii9YrjjWw0jmw/liSbHl2CHiyXj6FcDXDu2K3TjVAXqiJdaw3xxwlZZr9E6nHg==
 
 minimatch@^3.0.4, minimatch@^3.1.1:
@@ -4620,10 +4633,10 @@ ufo@^0.8.5, ufo@^0.8.6:
   resolved "https://registry.npmjs.org/ufo/-/ufo-0.8.6.tgz"
   integrity sha512-fk6CmUgwKCfX79EzcDQQpSCMxrHstvbLswFChHS0Vump+kFkw7nJBfTZoC1j0bOGoY9I7R3n2DGek5ajbcYnOw==
 
-ufo@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.npmjs.org/ufo/-/ufo-1.0.0.tgz"
-  integrity sha512-DRty0ZBNlJ2R59y4mEupJRKLbkLQsc4qtxjpQv78AwEDuBkaUogMc2LkeqW3HddFlw6NwnXYfdThEZOiNgkmmQ==
+ufo@^1.0.0, ufo@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.npmjs.org/ufo/-/ufo-1.0.1.tgz"
+  integrity sha512-boAm74ubXHY7KJQZLlXrtMz52qFvpsbOxDcZOnw/Wf+LS4Mmyu7JxmzD4tDLtUQtmZECypJ0FrCz4QIe6dvKRA==
 
 ultrahtml@^1.0.0:
   version "1.0.1"

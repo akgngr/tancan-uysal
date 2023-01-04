@@ -24,8 +24,16 @@ export default defineNuxtConfig({
   app: {
     head: {
       link: [
-        { rel:"stylesheet", href: "https://fonts.googleapis.com/css2?family=Sacramento&display=swap"},
+        { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Sacramento&display=swap" },
       ],
     },
+  },
+  runtimeConfig: {
+    public: {
+      smtp: process.env.SMTP,
+      email: process.env.EMAIL,
+      pass: process.env.PASS,
+      port: process.env.PORT
+    }
   }
-})
+});

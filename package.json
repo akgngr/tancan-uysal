@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "@img-comparison-slider/vue": "^7.7.0",
+    "emailjs": "^4.0.1",
     "flowbite": "^1.5.4",
     "flowbite-vue": "^0.0.7",
     "moment": "^2.29.4",
