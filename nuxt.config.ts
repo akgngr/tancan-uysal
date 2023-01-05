@@ -26,7 +26,11 @@ export default defineNuxtConfig({
       link: [
         { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Sacramento&display=swap" },
       ],
+      meta: [
+        { name:"google-site-verification", content: "rVjh1vaS7XrikvMdxEXP7fj6g-cCusbFYTTWuzFTLIE" }
+      ]
     },
+    
   },
   runtimeConfig: {
     public: {
