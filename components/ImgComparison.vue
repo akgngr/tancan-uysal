@@ -3,7 +3,7 @@
     <div class="mx-auto my-32 w-11/12">
       <div class="mx-auto py-2">
         <NuxtLink to="/after-before">
-          <h2 class="text-2xl font-semibold">After Before</h2>
+          <h2 class="text-3xl font-semibold">Referanslarımız</h2>
         </NuxtLink>
       </div>
 
@@ -19,7 +19,6 @@
               :height="afterBofer.afterImage.height"
               :src="afterBofer.afterImage.url"
             />
-            <figcaption>Before</figcaption>
           </figure>
           <figure slot="second" class="after">
             <img
@@ -27,7 +26,6 @@
               :height="afterBofer.beforeImage.height"
               :src="afterBofer.beforeImage.url"
             />
-            <figcaption>After</figcaption>
           </figure>
         </img-comparison-slider>
       </div>

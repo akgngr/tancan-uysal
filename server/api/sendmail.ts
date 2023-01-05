@@ -52,12 +52,12 @@ export default defineEventHandler(async (event) => {
           },
         ],
       });
-      return event.res.end('Mesajınız başarılı bir şekilde gönderilmiştir.')
+      return {success: 'Mesajınız başarılı bir şekilde gönderilmiştir.'}
     } catch (err) {
-      return event.res.end('Mesajınız gönderilirken bir hata ile karşılaşılmıştır. Hata: '+err)
+      return {error: 'Mesajınız gönderilirken bir hata ile karşılaşılmıştır. Hata: '+err}
     }
   } else if (event.req.method === 'GET')
   {
-    return event.res.end(process.env.PASS)  
+    return {message: "Bu alanı bakma izniniz yoktur!"}
   }
 });

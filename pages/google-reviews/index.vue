@@ -20,7 +20,7 @@
 <script lang="ts" setup>
 const query = gql`
   query getReviews {
-    googleReview {
+    googleReview(orderBy: publishedAt_DESC) {
       id
       isimSoyisim
       yildiz

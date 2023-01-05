@@ -2,7 +2,7 @@
   <div class="bg-gray-100 py-32">
     <div class="mx-auto w-11/12">
       <a href="/google-reviews">
-        <h2 class="text-2xl font-semibold">Hasta Görüşleri</h2>
+        <h2 class="text-3xl text-left font-semibold">Hasta Görüşleri</h2>
       </a>
       <div class="grid md:grid-cols-2 lg:grid-cols-3">
         <ui-review-component

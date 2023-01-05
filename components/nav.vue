@@ -44,7 +44,7 @@
           <li><ui-nav-link link="/" text="Anasayfa" /></li>
           <li><ui-nav-link link="/hakkimda" text="Hakkımda" /></li>
           <li><ui-nav-link link="/invisalign" text="Şeffaf Plaklar" /></li>
-          <li><ui-nav-link link="/after-before" text="After Before" /></li>
+          <li><ui-nav-link link="/after-before" text="Referanslarım" /></li>
           <li><ui-nav-link link="/blogs" text="Blog" /></li>
           <li><ui-nav-link link="/iletisim" text="İletişim" /></li>
         </ui-nav-ul>

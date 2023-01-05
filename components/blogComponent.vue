@@ -8,7 +8,7 @@
         Bu bölümde beyaz estetik, pembe estetik, yüz estetiği, gülümseme
         estetiği ve ortodonti tedavisi hakkında bilgi edinebilirsiniz.
       </p>
-      <div class="grid grid-cols-1 gap-4 pt-8 md:grid-cols-2 lg:grid-cols-3">
+      <div class="grid grid-cols-1 gap-4 pt-8 md:grid-cols-3 lg:grid-cols-4">
         <BlogCard
           v-for="blog in data.blogs"
           :key="blog.id"
@@ -26,7 +26,7 @@
 <script lang="ts" setup>
 const query = gql`
   query getBlogs {
-    blogs(first: 3, orderBy: publishedAt_ASC) {
+    blogs(first: 4, orderBy: publishedAt_DESC) {
       description
       id
       publishedAt

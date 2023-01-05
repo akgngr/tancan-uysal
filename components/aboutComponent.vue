@@ -29,4 +29,5 @@ const query = gql`
 `;
 
 const { data } = await useAsyncQuery(query);
+
 </script>

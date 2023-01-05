@@ -1,5 +1,5 @@
 <template>
-  <seo />
+  <seo title="Prof. Dr. Tancan UYSAL | Şeffaf Plaklarla Ortodontik Tedavi" description="İzmir Şeffaf Plaklarla Ortodontik Tedavi" />
   <AboutComponent />
   <invisalign />
   <youtube-component />
