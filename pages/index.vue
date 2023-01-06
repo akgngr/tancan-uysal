@@ -1,5 +1,9 @@
 <template>
-  <seo title="Prof. Dr. Tancan UYSAL | Şeffaf Plaklarla Ortodontik Tedavi" description="İzmir Şeffaf Plaklarla Ortodontik Tedavi" />
+  <seo
+    title="Prof. Dr. Tancan UYSAL | Şeffaf Plaklarla Ortodontik Tedavi"
+    description="İzmir Şeffaf Plaklarla Ortodontik Tedavi"
+  />
+  <pre></pre>
   <AboutComponent />
   <invisalign />
   <youtube-component />
@@ -9,7 +13,7 @@
   <blog-component />
   <Harita />
 </template>
-<script setup lang="ts">
+<script lang="ts" setup>
 definePageMeta({
   layout: "homelayout",
 });

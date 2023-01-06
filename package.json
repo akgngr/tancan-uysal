@@ -12,8 +12,10 @@
     "@nuxtjs/apollo": "^5.0.0-alpha.4",
     "@tailwindcss/typography": "^0.5.8",
     "@types/vue-moment": "^4.0.3",
+    "add": "^2.0.6",
     "autoprefixer": "^10.4.13",
     "nuxt": "3.0.0",
+    "nuxt-simple-sitemap": "^0.5.8",
     "postcss": "^8.4.19",
     "prettier": "^2.7.1",
     "prettier-plugin-tailwindcss": "^0.1.13",
@@ -24,7 +26,9 @@
     "emailjs": "^4.0.1",
     "flowbite": "^1.5.4",
     "flowbite-vue": "^0.0.7",
+    "graphql-request": "^5.1.0",
     "moment": "^2.29.4",
+    "node-fetch": "^3.3.0",
     "vue-moment": "^4.1.0"
   }
 }

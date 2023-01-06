@@ -1,3 +1,4 @@
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   typescript: {
@@ -10,11 +11,32 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  modules: ['@nuxtjs/apollo', '@nuxt/image-edge'],
+  modules: ['@nuxtjs/apollo', '@nuxt/image-edge', 'nuxt-simple-sitemap'],
+  nitro: {
+    prerender: {
+      crawlLinks: true,
+      routes:[
+        "/blog/bunu-okumadan-dis-tellerinizi-taktirmayin",
+        "/blog/caprasik-dislerin-olusturacagi-sikintilar",
+        "/blog/seffaf-plak-tedavinizde-basarili-olmak-icin-6-ipucu",
+        "/blog/seffaf-plak-ya-da-yaygin-bilinen-adiyla-invisalign-tedavileri-nedir-2023",
+        "/blog/invisalign-seffaf-plaklarin-kullaniminda-siklikla-karsilasilan-problemler-ve-cozum-onerileri",
+        "/blog/invisalign-seffaf-plaklarin-temizlik-ve-bakimi-nasil-yapilir-bilmeniz-gereken-her-sey",
+        "/blog/seffaf-plaklari-kullanirken-olusabilecek-agiz-kurulugu-nasil-onlenir",
+        "/blog/2023-yili-invisalign-seffaf-plak-fiyati-nekadar"
+      ]
+    }
+  },
+  sitemap: {
+    hostname: 'https://tancanuysal.com',
+    exclude: [
+        '/api/**'
+    ]
+  },
   apollo: {
     clients: {
       default: {
-        httpEndpoint: 'https://api-eu-central-1-shared-euc1-02.hygraph.com/v2/cla77gago0ye301uof4bk3yaf/master'
+        httpEndpoint: `${process.env.HYGRAPH}`
       }
     },
   },
