@@ -9,12 +9,20 @@
     <div
       class="absolute top-0 left-0 h-full w-full bg-blue-900 opacity-40"
     ></div>
-    <h1
-      class="absolute z-10 mx-auto w-8/12 text-center text-6xl font-semibold uppercase text-gray-100 drop-shadow-2xl"
+    <div
+      class="absolute left-10 z-10 mx-auto flex w-8/12 flex-col justify-center text-center md:left-48"
     >
-      Şeffaf plaklarla ortodontik tedavi,
-      <span class="text-yellow-800">invisalign.</span>
-    </h1>
+      <h1
+        class="w-full text-left text-5xl font-semibold uppercase text-gray-100 drop-shadow-2xl md:text-center md:text-4xl lg:text-6xl"
+      >
+        Şeffaf plaklarla ortodontik tedavi
+      </h1>
+      <h2
+        class="text-left text-5xl font-semibold uppercase text-yellow-800 md:text-center"
+      >
+        invisalign.
+      </h2>
+    </div>
   </header>
 
   <section class="mx-auto my-32 grid w-11/12 gap-6 md:grid-cols-2">
