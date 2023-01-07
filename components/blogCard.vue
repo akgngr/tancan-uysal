@@ -1,15 +1,17 @@
 <template>
   <div class="rounded-md shadow-md">
     <nuxt-img
-      class="rounded-tl-lg rounded-tr-lg"
+      class="w-full rounded-tl-lg rounded-tr-lg"
       :src="img.url"
       :alt="img.title"
     />
     <div class="prose-sm p-4">
-      <h2 class="font-semibold">{{ title }}</h2>
+      <a :href="'/blog/' + slug"
+        ><h2 class="font-semibold">{{ title }}</h2></a
+      >
       <span class="m-0 p-0">{{ date }}</span>
       <p>{{ description }}</p>
-      <ui-link-btn :link="'/blog/' + slug" text="Devamını Oku" />
+      <ui-btn-primary :link="'/blog/' + slug" text="Devamını Oku" />
     </div>
   </div>
 </template>

@@ -14,3 +14,6 @@ h1, h2, h3, h4{
     --tw-text-opacity: 1;
     color: rgb(133 77 14 / var(--tw-text-opacity));
 }
+.router-link-active, .router-link-exact-active{
+    @apply text-yellow-500
+}

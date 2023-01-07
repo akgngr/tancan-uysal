@@ -7,30 +7,32 @@
         </NuxtLink>
       </div>
 
-      <div class="my-8 mx-auto grid grid-cols-1 gap-4 lg:grid-cols-3">
+      <div
+        class="my-8 mx-auto grid grid-cols-1 justify-center gap-4 lg:grid-cols-3"
+      >
         <img-comparison-slider
           v-for="afterBofer in data.afterBoferes"
           :key="afterBofer.id"
-          class="rendered"
+          class="rendered text-center"
         >
-          <figure slot="first" class="before">
-            <img
-              :width="afterBofer.afterImage.width"
-              :height="afterBofer.afterImage.height"
-              :src="afterBofer.afterImage.url"
-            />
-          </figure>
-          <figure slot="second" class="after">
+          <figure slot="first" class="after">
             <img
               :width="afterBofer.beforeImage.width"
               :height="afterBofer.beforeImage.height"
               :src="afterBofer.beforeImage.url"
             />
           </figure>
+          <figure slot="second" class="before">
+            <img
+              :width="afterBofer.afterImage.width"
+              :height="afterBofer.afterImage.height"
+              :src="afterBofer.afterImage.url"
+            />
+          </figure>
         </img-comparison-slider>
       </div>
       <div class="my-8 text-center">
-        <ui-btn-primary link="/after-before" text="Diğer Resimler" />
+        <ui-btn-primary link="/after-before" text="Diğer Referanslar" />
       </div>
     </div>
   </client-only>

@@ -30,7 +30,7 @@
         >
       </p>
       <div class="flex justify-center gap-4 pt-4 md:justify-start">
-        <span class="block h-12 w-12">
+        <span class="block h-10 w-10">
           <a
             target="_blank"
             href="https://www.linkedin.com/in/tancan-uysal-29023046/"
@@ -38,12 +38,12 @@
             <svg-linkedin
           /></a>
         </span>
-        <span class="block h-12 w-12">
+        <span class="block h-10 w-10">
           <a target="_blank" href="https://www.facebook.com/tancan.uysal">
             <svg-facebook
           /></a>
         </span>
-        <span class="block h-12 w-12">
+        <span class="block h-10 w-10">
           <a
             target="_blank"
             href="https://www.instagram.com/profdrtancanuysal/"
@@ -51,17 +51,17 @@
             <svg-instagram
           /></a>
         </span>
-        <span class="block h-12 w-12">
+        <span class="block h-10 w-10">
           <a target="_blank" href="https://twitter.com/tancanuysal">
             <svg-twitter
           /></a>
         </span>
-        <span class="block h-12 w-12">
+        <span class="block h-10 w-10">
           <a target="_blank" href="https://www.youtube.com/c/TancanUysal">
             <svg-youtube
           /></a>
         </span>
-        <span class="block h-12 w-12">
+        <span class="block h-10 w-10">
           <a target="_blank" href="https://www.tiktok.com/@tancanuysal">
             <svg-tiktok
           /></a>

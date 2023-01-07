@@ -5,31 +5,29 @@
   />
   <client-only>
     <div class="flex h-60 items-center justify-center">
-      <h1 class="text-3xl font-bold">After Before</h1>
+      <h1 class="text-3xl font-bold">Referanslar</h1>
     </div>
 
-    <div class="my-8 mx-auto grid grid-cols-1 gap-4 px-4 lg:grid-cols-3">
+    <div
+      class="beforeafter my-8 mx-auto grid grid-cols-1 justify-center gap-4 px-4 lg:grid-cols-2"
+    >
       <div v-for="afterBofer in data.afterBoferes" :key="afterBofer.id">
-        <img-comparison-slider class="rendered">
-          <figure slot="first" class="before">
-            <img
-              :width="afterBofer.afterImage.width"
-              :height="afterBofer.afterImage.height"
-              :src="afterBofer.afterImage.url"
-            />
-            <figcaption>Before</figcaption>
-          </figure>
-          <figure slot="second" class="after">
+        <img-comparison-slider class="rendered text-center">
+          <figure slot="first" class="after">
             <img
               :width="afterBofer.beforeImage.width"
               :height="afterBofer.beforeImage.height"
               :src="afterBofer.beforeImage.url"
             />
-            <figcaption>After</figcaption>
+          </figure>
+          <figure slot="second" class="before">
+            <img
+              :width="afterBofer.afterImage.width"
+              :height="afterBofer.afterImage.height"
+              :src="afterBofer.afterImage.url"
+            />
           </figure>
         </img-comparison-slider>
-        <h2>{{ afterBofer.title }}</h2>
-        <p>{{ afterBofer.description }}</p>
       </div>
     </div>
   </client-only>
@@ -103,5 +101,8 @@ useHead({
 
 .slider-with-animated-handle:hover .custom-animated-handle {
   transform: scale(1.2);
+}
+.beforeafter div {
+  @apply flex justify-center;
 }
 </style>
