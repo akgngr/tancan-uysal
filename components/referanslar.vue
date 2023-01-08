@@ -1,14 +1,14 @@
 <template>
   <client-only>
-    <div class="mx-auto my-32 w-11/12">
+    <div class="mx-auto my-32 w-10/12">
       <div class="mx-auto py-2">
-        <NuxtLink to="/after-before">
-          <h2 class="text-3xl font-semibold">Referanslarımız</h2>
+        <NuxtLink to="/referanslar">
+          <h2 class="text-3xl font-semibold">Referanslar</h2>
         </NuxtLink>
       </div>
 
       <div
-        class="my-8 mx-auto grid grid-cols-1 justify-center gap-4 lg:grid-cols-3"
+        class="beforeafter my-8 mx-auto grid grid-cols-1 justify-center gap-4 lg:grid-cols-2"
       >
         <img-comparison-slider
           v-for="afterBofer in data.afterBoferes"
@@ -20,6 +20,7 @@
               :width="afterBofer.beforeImage.width"
               :height="afterBofer.beforeImage.height"
               :src="afterBofer.beforeImage.url"
+              :alt="afterBofer.afterImage.title"
             />
           </figure>
           <figure slot="second" class="before">
@@ -27,12 +28,13 @@
               :width="afterBofer.afterImage.width"
               :height="afterBofer.afterImage.height"
               :src="afterBofer.afterImage.url"
+              :alt="afterBofer.afterImage.title"
             />
           </figure>
         </img-comparison-slider>
       </div>
       <div class="my-8 text-center">
-        <ui-btn-primary link="/after-before" text="Diğer Referanslar" />
+        <ui-btn-primary link="/referanslar" text="Diğer Referanslar" />
       </div>
     </div>
   </client-only>
@@ -41,13 +43,19 @@
 <script setup lang="ts">
 const query = gql`
   query getAfterBoferes {
-    afterBoferes(first: 3, orderBy: publishedAt_DESC) {
+    afterBoferes(
+      first: 4
+      orderBy: publishedAt_DESC
+      where: { fronted: true }
+    ) {
       id
       afterImage {
         url
+        title
       }
       beforeImage {
         url
+        title
       }
     }
   }
@@ -104,5 +112,8 @@ useHead({
 
 .slider-with-animated-handle:hover .custom-animated-handle {
   transform: scale(1.2);
+}
+.beforeafter div {
+  @apply flex justify-center;
 }
 </style>

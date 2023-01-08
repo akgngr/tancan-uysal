@@ -8,7 +8,7 @@
   <invisalign />
   <youtube-component />
   <iletisim-component />
-  <img-comparison />
+  <referanslar />
   <reviews />
   <blog-component />
   <Harita />
