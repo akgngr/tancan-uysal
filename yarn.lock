@@ -726,6 +726,11 @@
   dependencies:
     "@unhead/schema" "1.0.2"
 
+"@unhead/schema-org-vue@^0.4.0":
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/@unhead/schema-org-vue/-/schema-org-vue-0.4.0.tgz#25a9ed7910652928528e524393fa96d43dec90c2"
+  integrity sha512-GEO7fYz0gVv72eD1Z8UbY4i2Dh6ymbdKWKekDd4vH5tNamWipq7hfBglYqLRZAjjSEzYr/bHIw+Y3nNvEcQZiw==
+
 "@unhead/schema@1.0.2", "@unhead/schema@^1.0.1":
   version "1.0.2"
   resolved "https://registry.npmjs.org/@unhead/schema/-/schema-1.0.2.tgz"
@@ -3404,6 +3409,15 @@ nuxi@3.0.0:
   integrity sha512-VWh1kKFffxD2yadZWcQSd6eTf9okXRr7d3HsjLiI4B3Q1/8iKdIUiodGo7X71OZ+gPVnX6Oh/XFzcb7mr+8TbQ==
   optionalDependencies:
     fsevents "~2.3.2"
+
+nuxt-schema-org@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/nuxt-schema-org/-/nuxt-schema-org-2.1.0.tgz#8209bcac2f8eaeabf101123f31a7f9ba9563b479"
+  integrity sha512-6nKcwQYkt26vm3rXKy3c6nvokCdFYwwuprSA8AkBWRG8S03zhv6THJ8HIIHmmyKV6K3wuImlVuiIPH2O/FUPHg==
+  dependencies:
+    "@nuxt/kit" "3.0.0"
+    "@unhead/schema-org-vue" "^0.4.0"
+    pathe "^1.0.0"
 
 nuxt-simple-sitemap@^0.5.8:
   version "0.5.8"
