@@ -50,11 +50,21 @@ const query = gql`
     ) {
       id
       afterImage {
-        url
+        url(
+          transformation: {
+            document: { output: { format: webp } }
+            image: { resize: { fit: clip, height: 380, width: 600 } }
+          }
+        )
         title
       }
       beforeImage {
-        url
+        url(
+          transformation: {
+            document: { output: { format: webp } }
+            image: { resize: { fit: clip, height: 380, width: 600 } }
+          }
+        )
         title
       }
     }

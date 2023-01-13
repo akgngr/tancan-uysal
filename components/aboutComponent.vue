@@ -8,10 +8,11 @@
       <ui-btn-primary link="/hakkimda" text="Devamını Oku" />
     </article>
 
-    <nuxt-picture
+    <nuxt-image
       class="w-full flex-1 rounded-md"
       :src="data.page.image.url"
       :placeholder="[100, 50, 10]"
+      :alt="data.page.image.title"
     />
   </div>
 </template>
@@ -22,7 +23,8 @@ const query = gql`
     page(where: { id: "cla8nuodj0h7g0aumvztks1tw" }) {
       description
       image {
-        url
+        title
+        url(transformation: { document: { output: { format: webp } } })
       }
     }
   }

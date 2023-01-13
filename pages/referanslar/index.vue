@@ -18,6 +18,7 @@
               :width="afterBofer.beforeImage.width"
               :height="afterBofer.beforeImage.height"
               :src="afterBofer.beforeImage.url"
+              :alt="afterBofer.beforeImage.title"
             />
           </figure>
           <figure slot="second" class="before">
@@ -25,6 +26,7 @@
               :width="afterBofer.afterImage.width"
               :height="afterBofer.afterImage.height"
               :src="afterBofer.afterImage.url"
+              :alt="afterBofer.afterImage.title"
             />
           </figure>
         </img-comparison-slider>
@@ -36,15 +38,28 @@
 <script setup lang="ts">
 const query = gql`
   query getAfterBoferes {
-    afterBoferes(orderBy: publishedAt_DESC) {
-      id
-      title
-      description
+    afterBoferes {
       afterImage {
-        url
+        url(
+          transformation: {
+            document: { output: { format: webp } }
+            image: { resize: { fit: clip, height: 320, width: 480 } }
+          }
+        )
+        width
+        height
+        title
       }
       beforeImage {
-        url
+        url(
+          transformation: {
+            document: { output: { format: webp } }
+            image: { resize: { fit: clip, height: 320, width: 480 } }
+          }
+        )
+        width
+        height
+        title
       }
     }
   }

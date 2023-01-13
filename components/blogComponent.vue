@@ -35,7 +35,12 @@ const query = gql`
       image {
         size
         title
-        url
+        url(
+          transformation: {
+            document: { output: { format: webp } }
+            image: { resize: { fit: clip, height: 320, width: 480 } }
+          }
+        )
       }
     }
   }

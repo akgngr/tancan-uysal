@@ -29,7 +29,7 @@ const query = gql`
         html
       }
       image {
-        url
+        url(transformation: { document: { output: { format: webp } } })
       }
     }
   }

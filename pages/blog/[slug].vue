@@ -33,7 +33,7 @@ const query = gql`
       image {
         size
         title
-        url
+        url(transformation: { document: { output: { format: webp } } })
       }
     }
   }

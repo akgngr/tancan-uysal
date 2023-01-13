@@ -18,10 +18,9 @@
     title="Prof. Dr. Tancan UYSAL | Şeffaf Plaklarla Ortodontik Tedavi"
     description="İzmir Şeffaf Plaklarla Ortodontik Tedavi"
   />
-  <pre></pre>
   <AboutComponent />
   <invisalign />
-  <youtubeComponent />
+  <LazyYoutubeComponent />
   <iletisim-component />
   <referanslar />
   <reviews />
