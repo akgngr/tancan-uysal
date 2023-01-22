@@ -6,8 +6,8 @@
   <div class="flex h-60 items-center justify-center">
     <h1 class="text-xl font-semibold">Videolarım</h1>
   </div>
-  <div class="mb-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-    <div v-for="item in data.items" :key="item.id.videoId">
+  <div class="mb-12 grid w-full gap-8 md:grid-cols-2 lg:grid-cols-3">
+    <div v-for="item in video?.items" :key="item.id.videoId">
       <iframe
         width="100%"
         height="315"
@@ -20,8 +20,55 @@
       ></iframe>
     </div>
   </div>
+  <div class="flex w-full justify-center gap-4 py-8">
+    <button v-if="!video.prevPageToken" disabled class="btn-disabled">
+      Geri
+    </button>
+    <button v-else @click="fetchYoutube(video.prevPageToken)" class="btn">
+      Geri
+    </button>
+    <button v-if="!video.nextPageToken" disabled class="btn-disabled">
+      İleri
+    </button>
+    <button v-else @click="fetchYoutube(video.nextPageToken)" class="btn">
+      İleri
+    </button>
+  </div>
 </template>
 
 <script setup>
-const { data } = await useAsyncData("youtube", () => $fetch("/api/youtube"));
+import { ref } from "vue";
+
+const page = ref("CAIQAQ");
+
+const {
+  data: video,
+  error,
+  refresh,
+  pending,
+} = await useFetch(() => `/api/youtube?page=${page.value}`);
+
+//console.log(video);
+
+async function fetchYoutube(page) {
+  console.log(page);
+  this.page = "";
+  this.page = page;
+  window.scroll({
+    top: 0,
+    left: 0,
+    behavior: "smooth",
+  });
+  refresh();
+}
+
+// console.log(data);
 </script>
+<style scoped>
+.btn {
+  @apply rounded-md border border-gray-400 py-2 px-4 font-semibold text-gray-600;
+}
+.btn-disabled {
+  @apply rounded-md border border-gray-400 bg-gray-400 py-2 px-4 font-semibold text-gray-200;
+}
+</style>

@@ -6,7 +6,7 @@
   <div class="flex h-60 w-full items-center justify-center">
     <h1 class="text-3xl font-bold">Hasta Görüşleri</h1>
   </div>
-  <div class="grid grid-cols-3 gap-2">
+  <div class="grid gap-2 md:grid-cols-3">
     <ui-review-component
       v-for="review in data.googleReview"
       :key="review.id"

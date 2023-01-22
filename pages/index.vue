@@ -1,22 +1,7 @@
 <template>
-  <SchemaOrgLocalBusiness
-    name="Prof. Dr. Tancan UYSAL | Şeffaf Plaklarla Ortodontik Tedavi"
-    image="/logo.png"
-    :address="{
-      streetAddress: 'Adalet Mah. Şehit Polis Fethi Sekin Cad. No 4/B',
-      addressLocality: 'Bayraklı',
-      addressRegion: 'İzmir',
-      postalCode: '35510',
-      addressCountry: 'TR',
-    }"
-  />
-  <SchemaOrgWebSite
-    name="Prof. Dr. Tancan UYSAL | Şeffaf Plaklarla Ortodontik Tedavi"
-  />
-  <SchemaOrgWebPage />
   <seo
     title="Prof. Dr. Tancan UYSAL | Şeffaf Plaklarla Ortodontik Tedavi"
-    description="İzmir Şeffaf Plaklarla Ortodontik Tedavi"
+    description="Prof. Dr. Tancan UYSAL, İzmir Şeffaf Plaklarla Ortodontik Tedavi, Invisalign"
   />
   <AboutComponent />
   <invisalign />
