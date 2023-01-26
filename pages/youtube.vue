@@ -34,36 +34,36 @@
       İleri
     </button>
   </div>
-  {{ page }}
-  {{ video }}
 </template>
 
-<script setup>
-import { ref } from "vue";
-
-const page = ref("CAIQAQ");
-
-const {
-  data: video,
-  error,
-  refresh,
-  pending,
-} = await useFetch(() => `/api/youtube?page=${page.value}`);
-
-console.log(video);
-
-async function fetchYoutube(page) {
-  console.log(page);
-  this.page = page;
-  window.scroll({
-    top: 0,
-    left: 0,
-    behavior: "smooth",
-  });
-  refresh();
-}
-
-// console.log(data);
+<script>
+export default {
+  data() {
+    return {
+      page: "CAIQAQ",
+      video: null,
+    };
+  },
+  mounted() {
+    this.fetchYoutubeVideo(this.page);
+    console.log(this.video);
+  },
+  methods: {
+    async fetchYoutubeVideo(page) {
+      await fetch(`/api/youtube?page=${page}`)
+        .then((response) => response.json())
+        .then((data) => (this.video = data));
+    },
+    async fetchYoutube(page) {
+      await this.fetchYoutubeVideo(page);
+      window.scroll({
+        top: 0,
+        left: 0,
+        behavior: "smooth",
+      });
+    },
+  },
+};
 </script>
 <style scoped>
 .btn {
