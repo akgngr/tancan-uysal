@@ -20,7 +20,7 @@
       ></iframe>
     </div>
   </div>
-  <div class="flex w-full justify-center gap-4 py-8">
+  <div v-if="video" class="flex w-full justify-center gap-4 py-8">
     <button v-if="!video.prevPageToken" disabled class="btn-disabled">
       Geri
     </button>
@@ -34,6 +34,8 @@
       İleri
     </button>
   </div>
+  {{ page }}
+  {{ video }}
 </template>
 
 <script setup>
@@ -48,11 +50,10 @@ const {
   pending,
 } = await useFetch(() => `/api/youtube?page=${page.value}`);
 
-//console.log(video);
+console.log(video);
 
 async function fetchYoutube(page) {
   console.log(page);
-  this.page = "";
   this.page = page;
   window.scroll({
     top: 0,
