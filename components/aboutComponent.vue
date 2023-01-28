@@ -8,10 +8,9 @@
       <ui-btn-primary link="/hakkimda" text="Devamını Oku" />
     </article>
 
-    <nuxt-image
+    <img
       class="w-full flex-1 rounded-md"
       :src="data.page.image.url"
-      :placeholder="[100, 50, 10]"
       :alt="data.page.image.title"
     />
   </div>

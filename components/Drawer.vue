@@ -33,7 +33,7 @@
       <li><ui-nav-link link="/hakkimda" text="Hakkımda" /></li>
       <li><ui-nav-link link="/invisalign" text="Şeffaf Plaklar" /></li>
       <li><ui-nav-link link="/referanslar" text="Referanslar" /></li>
-      <li><ui-nav-link link="/blog" text="Blog" /></li>
+      <li><ui-nav-link link="/blogs/1" text="Blog" /></li>
       <li><ui-nav-link link="/iletisim" text="İletişim" /></li>
     </ui-nav-ul>
     <ui-btn-primary link="/iletisim" text="Randevu Al" />

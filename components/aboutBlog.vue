@@ -1,7 +1,7 @@
 <template>
   <div class="my-8 px-8 py-8 md:px-16">
     <client-only placeholder="Yükleniyor...">
-      <NuxtLink href="/blogs"
+      <NuxtLink href="/blogs/1"
         ><h2 class="pb-6 text-3xl font-semibold">
           Şeffaf plaklarla ortodontik tedavi ile ilgili yazılarım.
         </h2></NuxtLink

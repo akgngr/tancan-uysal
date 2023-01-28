@@ -1,7 +1,7 @@
 <template>
   <div class="px-8 py-16 md:px-16">
     <client-only placeholder="Yükleniyor...">
-      <NuxtLink href="/blog"
+      <NuxtLink href="/blogs/1"
         ><h2 class="pb-6 text-3xl font-semibold">Blog Yazılarım</h2></NuxtLink
       >
       <p>
