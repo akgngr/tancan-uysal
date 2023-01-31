@@ -11,7 +11,11 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  modules: ['@nuxtjs/apollo', '@nuxt/image-edge', 'nuxt-simple-sitemap'],
+  modules: [
+    '@nuxtjs/apollo',
+    '@nuxt/image-edge',
+    'nuxt-simple-sitemap',
+  ],
   nitro: {
     prerender: {
       crawlLinks: true,
@@ -23,7 +27,17 @@ export default defineNuxtConfig({
         "/blog/invisalign-seffaf-plaklarin-kullaniminda-siklikla-karsilasilan-problemler-ve-cozum-onerileri",
         "/blog/invisalign-seffaf-plaklarin-temizlik-ve-bakimi-nasil-yapilir-bilmeniz-gereken-her-sey",
         "/blog/seffaf-plaklari-kullanirken-olusabilecek-agiz-kurulugu-nasil-onlenir",
-        "/blog/2023-yili-invisalign-seffaf-plak-fiyati-nekadar"
+        "/blog/dis-telleri-ve-seffaf-plaklar-seffaf-plaklar-metal-braketler-kadar-etkili-mi",
+        "/blog/seffaf-plaklarin-dis-tellerine-gore-avantaj-ve-dezavantajlari-nelerdir",
+        "/blog/invisalign-seffaf-plaklari-kullanirken-spor-yapilabilir-mi",
+        "/blog/seffaf-plaklar-hangi-ortodontik-problemleri-duzeltebilir-yada-duzeltemez",
+        "/blog/invisalign-seffaf-plaklarin-calismasi-ne-kadar-surer-tedavi-nasil-hizlanir",
+        "/blog/2023-yili-invisalign-seffaf-plak-fiyati-nekadar",
+        "/blog/invisalign-seffaf-plaklar-derin-kapanisi-deep-bite-duzeltilebilir-mi",
+        "/blog/invisalign-seffaf-plaklar-derin-kapanisi-deep-bite-duzeltebilir-mi-2023",
+        "/blog/invisalign-acik-kapanis-problemimi-duzeltebilir-mi",
+        "/blog/seffaf-plak-tedavisi-agri-yapar-mi",
+        "/blog/gencler-ve-cocuklar-icin-invisalign-seffaf-plaklar",
       ]
     }
   },

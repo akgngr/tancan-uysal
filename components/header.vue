@@ -2,13 +2,13 @@
   <div>
     <NuxtImg
       class="w-full md:hidden"
-      :src="data.sETTINGS.images[0].imagesSETTINGS[0].images[0].url"
-      :alt="data.sETTINGS.images[0].imagesSETTINGS[0].images[0].title"
+      :src="data.sETTINGS.images[0].url"
+      :alt="data.sETTINGS.images[0].title"
     />
     <NuxtImg
       class="hidden w-full md:block"
-      :src="data.sETTINGS.images[0].imagesSETTINGS[0].images[1].url"
-      :alt="data.sETTINGS.images[0].imagesSETTINGS[0].images[1].title"
+      :src="data.sETTINGS.images[1].url"
+      :alt="data.sETTINGS.images[1].title"
     />
   </div>
 </template>
@@ -20,13 +20,8 @@ const query = gql`
       data
       images {
         id
-        imagesSETTINGS {
-          title
-          images {
-            title
-            url
-          }
-        }
+        url(transformation: { document: { output: { format: webp } } })
+        title
       }
     }
   }
